@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Hello Image</title>
+	<link rel="stylesheet" media="screen" href="/css/blueprint/screen.css" />
+	<link rel="stylesheet" media="print" href="/css/blueprint/print.css" />
+</head>
+<body>
+	<div class="container">
+	<h2><%= @record['image_filename'] %></h2>
+	<h3>volume data</h3>
+	<table>
+		<thead/>
+		<tbody>
+			<tr><td width="10%">file system</td><td><b><%= @record['image_fstype'] %></b></td></tr>
+		</tbody>
+	</table>
+	<h4>Files</h4>
+	<% @record['files'].each do |file| %>
+		<p><%= file['filename'] %></p>
+	<% end %>	
+	</div>
+</body>
+</html>
