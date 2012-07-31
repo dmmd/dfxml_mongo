@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml version='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>fiwalk</program>
+    <version>0.6.16</version>
+    <build_environment>
+      <compiler>GCC 4.2</compiler>
+      <library name="tsk" version="3.2.3"/>
+      <library name="afflib" version="3.7.1"/>
+      <library name="libewf" version="20100226"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Darwin</os_sysname>
+      <os_release>10.8.0</os_release>
+      <os_version>Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386</os_version>
+      <host>mss-e.local</host>
+      <arch>i386</arch>
+      <command_line>fiwalk -fxc /Volumes/Staging/dgi/ficonfig.txt M1126-0022.001</command_line>
+      <start_time>2012-07-30T14:31:55Z</start_time>
+    </execution_environment>
+  </creator>
+<!-- Reading configuration file /Volumes/Staging/dgi/ficonfig.txt -->
+<!-- pattern: *  method: dgi  path: java -jar /Volumes/Staging/dgi/MssDGI.jar -->
+  <source>
+    <image_filename>M1126-0022.001</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>512</block_size>
+    <ftype>2</ftype>
+    <ftype_str>fat12</ftype_str>
+    <block_count>2400</block_count>
+    <first_block>0</first_block>
+    <last_block>2399</last_block>
+    <fileobject>
+      <filename>DM.EXE</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>61952</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-03-23T17:00:00Z</mtime>
+      <libmagic>MS-DOS executable, MZ for MS-DOS </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='14848' img_offset='14848' len='61952'/>
+      </byte_runs>
+      <hashdigest type='md5'>7610de1d2638d86e5d84888b5c27d452</hashdigest>
+      <hashdigest type='sha1'>7eae6b2f0d1cd10ed5ea5fa6631c01a6251f2911</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/410</pronomPuid>
+      <pronomMimeType />
+      <pronomFormat>Windows New Executable</pronomFormat>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>DMDRVR.BIN</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>10509</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-03-23T17:00:00Z</mtime>
+      <libmagic>DOS executable (device driver) </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='76800' img_offset='76800' len='10509'/>
+      </byte_runs>
+      <hashdigest type='md5'>38a777642e0c4026dc30d591e05e8636</hashdigest>
+      <hashdigest type='sha1'>f25e62da00548885ae730cdf7e14bd49d333c861</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>fmt/208</pronomPuid>
+      <pronomMimeType />
+      <pronomFormat>Binary File</pronomFormat>
+      <pronomIdentificationMethod>extension</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>BACKUP  001 (Volume Label Entry)</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1989-02-16T18:10:12Z</mtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>ONLINE.HLP</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>33591</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-03-23T17:00:00Z</mtime>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='87552' img_offset='87552' len='33591'/>
+      </byte_runs>
+      <hashdigest type='md5'>28ed4f1e1e6ff7e118ab2eb9eabaec94</hashdigest>
+      <hashdigest type='sha1'>c125350a6fe36e16e378f1aac5296d4506110b66</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>false</pronomMatch>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>COMPC.DOC</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>782336</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-10-17T03:57:04Z</mtime>
+      <libmagic>Microsoft Word Document </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='121344' img_offset='121344' len='712192'/>
+       <byte_run file_offset='712192' fs_offset='896000' img_offset='896000' len='70144'/>
+      </byte_runs>
+      <hashdigest type='md5'>521770b0acfbdc19f129d65f98b144ae</hashdigest>
+      <hashdigest type='sha1'>fdc8a1c8612edb60ca110a212e34bc9cff425ee9</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/274</pronomPuid>
+      <pronomMimeType>application/msword</pronomMimeType>
+      <pronomFormat>Microsoft Word for MS-DOS Document</pronomFormat>
+      <pronomFormatVersion>4.0</pronomFormatVersion>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>SUPEV</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>d</name_type>
+      <filesize>512</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-09-12T22:10:28Z</mtime>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='833536' img_offset='833536' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'>0dcbbb4e50c09ab305a9a889134dfdb5</hashdigest>
+      <hashdigest type='sha1'>b496a0663c505cca19c389193bb0d33463e920dc</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>SUPEV/.</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>d</name_type>
+      <filesize>512</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>2</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-09-12T22:10:28Z</mtime>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='833536' img_offset='833536' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'>0dcbbb4e50c09ab305a9a889134dfdb5</hashdigest>
+      <hashdigest type='sha1'>b496a0663c505cca19c389193bb0d33463e920dc</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>SUPEV/..</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>d</name_type>
+      <filesize>7168</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>2</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='7680' img_offset='7680' len='7168'/>
+      </byte_runs>
+      <hashdigest type='md5'>813b17a8751f2cb7fd5a678921ae4c0c</hashdigest>
+      <hashdigest type='sha1'>4f9fbbe5ff3348d878edd2b8f242c4cd92783221</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>CM.EXE</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>r</name_type>
+      <filesize>61952</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>9</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-03-23T17:00:00Z</mtime>
+      <libmagic>MS-DOS executable, MZ for MS-DOS </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='834048' img_offset='834048' len='61952'/>
+      </byte_runs>
+      <hashdigest type='md5'>9584793622160b68153ee8981866378a</hashdigest>
+      <hashdigest type='sha1'>931a7cb0cd23a0a92dbe9c1f27162580a7484c19</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/410</pronomPuid>
+      <pronomMimeType />
+      <pronomFormat>Windows New Executable</pronomFormat>
+      <pronomIdentificationMethod>binary signature</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>_OMPC.DOC</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>r</name_type>
+      <filesize>325120</filesize>
+      <unalloc>1</unalloc>
+      <used>1</used>
+      <inode>10</inode>
+      <meta_type>1</meta_type>
+      <mode>511</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <mtime>1990-10-17T04:16:48Z</mtime>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='896000' img_offset='896000' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'>6eb80cb8ddf3f740ec39856b1471e112</hashdigest>
+      <hashdigest type='sha1'>9bd21a2b250ca4996c5978a01af9f0252c5be7b0</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>true</pronomMatch>
+      <pronomPuid>x-fmt/2</pronomPuid>
+      <pronomMimeType />
+      <pronomFormat>Microsoft Word for  Macintosh Document</pronomFormat>
+      <pronomFormatVersion>6.0</pronomFormatVersion>
+      <pronomIdentificationMethod>extension</pronomIdentificationMethod>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>$MBR</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>v</name_type>
+      <filesize>512</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>38163</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>x86 boot sector, old MS or PC-DOS bootloader IBMBIO.COM+IBMDOS.COM, code offset 0x34, OEM-ID &quot;IBM  3.3&quot;, root entries 224, sectors 2400 (volumes &lt;=32 MB) , Media descriptor 0xf9, sectors/FAT 7, dos &lt; 4.0 BootSector (0x0) </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='0' img_offset='0' len='512'/>
+      </byte_runs>
+      <hashdigest type='md5'>2569ec7f8d31210c0b523aee07c08cdd</hashdigest>
+      <hashdigest type='sha1'>c9e317233ef856e9b72be635188e64c1689a2b01</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT1</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>v</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>38164</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='512' img_offset='512' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>aaf2409180aa59cb10e14e54460f10b1</hashdigest>
+      <hashdigest type='sha1'>da5471fb2e701390fbcacc8b713a3b597177ea7e</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$FAT2</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>v</name_type>
+      <filesize>3584</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>38165</inode>
+      <meta_type>10</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='4096' img_offset='4096' len='3584'/>
+      </byte_runs>
+      <hashdigest type='md5'>aaf2409180aa59cb10e14e54460f10b1</hashdigest>
+      <hashdigest type='sha1'>da5471fb2e701390fbcacc8b713a3b597177ea7e</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>38166</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+<!-- clock: 31 -->
+  <runstats>
+    <user_seconds>0</user_seconds>
+    <system_seconds>0</system_seconds>
+    <maxrss>1433600</maxrss>
+    <reclaims>526</reclaims>
+    <faults>0</faults>
+    <swaps>0</swaps>
+    <inputs>0</inputs>
+    <outputs>10</outputs>
+    <stop_time>Mon Jul 30 10:32:26 2012</stop_time>
+  </runstats>
+</dfxml>

@@ -1,0 +1,1 @@
+*	dgi 	java -jar /Volumes/Staging/dgi/MssDGI.jar
