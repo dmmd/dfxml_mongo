@@ -1,8 +1,9 @@
 <html>
 <head>
-	<title>Hello Image</title>
+	<title><%= @record['image_filename'] %></title>
 	<link rel="stylesheet" media="screen" href="/css/blueprint/screen.css" />
 	<link rel="stylesheet" media="print" href="/css/blueprint/print.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/start/jquery-ui-1.8.22.custom.css"/>
 </head>
 <body>
 	<div class="container">
@@ -12,12 +13,36 @@
 		<thead/>
 		<tbody>
 			<tr><td width="10%">file system</td><td><b><%= @record['image_fstype'] %></b></td></tr>
+			<tr><td width="10%">block size</td><td><b><%= @record['image_blk_size'] %></b></td></tr>
+			<tr><td width="10%">block count</td><td><b><%= @record['image_blk_count'] %></b></td></tr>
+			<tr><td width="10%">volume size</td><td><b><%= ((@record['image_blk_size'].to_i * @record['image_blk_count'].to_i) / 1024.00) / 1024.00 %></b></td></tr>
 		</tbody>
 	</table>
-	<h4>Files</h4>
-	<% @record['files'].each do |file| %>
-		<p><%= file['filename'] %></p>
-	<% end %>	
+	<h3>Files</h3>
+	<table>
+		<thead>
+			<tr>
+				<td>allocated</td>
+				<td>filename</td>
+				<td>format (Pronom)</td>
+				<td>size (Bytes)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<% @record['files'].each do |file| %>
+				<tr>
+					<% if file['alloc'] == 1.to_s %>
+						<td><span class="ui-icon ui-icon-circle-check"></span></td>
+					<% else %>
+						<td><span class="ui-icon ui-icon-circle-close"></span></td>
+					<% end %>
+					<td><%= file['filename'] %></td>
+					<td><%= file['pronom_format'] %></td>
+					<td><%= file['filesize'] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>	
 	</div>
 </body>
 </html>

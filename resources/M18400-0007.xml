@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml version='1.0'>
+  <metadata 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>fiwalk</program>
+    <version>0.6.16</version>
+    <build_environment>
+      <compiler>GCC 4.2</compiler>
+      <library name="tsk" version="3.2.3"/>
+      <library name="afflib" version="3.7.1"/>
+      <library name="libewf" version="20100226"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Darwin</os_sysname>
+      <os_release>10.8.0</os_release>
+      <os_version>Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386</os_version>
+      <host>mss-e.local</host>
+      <arch>i386</arch>
+      <command_line>fiwalk -fxc /Volumes/Staging/dgi/ficonfig.txt M18400-0007.iso</command_line>
+      <start_time>2012-08-01T15:04:12Z</start_time>
+    </execution_environment>
+  </creator>
+<!-- Reading configuration file /Volumes/Staging/dgi/ficonfig.txt -->
+<!-- pattern: *  method: dgi  path: java -jar /Volumes/Staging/dgi/MssDGI.jar -->
+  <source>
+    <image_filename>M18400-0007.iso</image_filename>
+  </source>
+<!-- TSK_Error 'Cannot determine file system type' at sector 1 offset 512 sector_size=512 -->
+<!-- fs start: 51200 -->
+  <volume offset='51200'>
+    <partition_offset>51200</partition_offset>
+    <block_size>4096</block_size>
+    <ftype>4096</ftype>
+    <ftype_str>hfs</ftype_str>
+    <block_count>1039629</block_count>
+    <first_block>0</first_block>
+    <last_block>1039628</last_block>
+    <fileobject>
+      <filename>$ExtentsFile</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>r</name_type>
+      <filesize>4096</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>3</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='135168' img_offset='186368' len='4096'/>
+      </byte_runs>
+      <hashdigest type='md5'>9ac82b38897a7538d3442efa7bd5dddf</hashdigest>
+      <hashdigest type='sha1'>d4755f6472df31c6a80a0d2989e8325c5f374540</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>false</pronomMatch>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>$CatalogFile</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>r</name_type>
+      <filesize>110592</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>4</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>data </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='139264' img_offset='190464' len='110592'/>
+      </byte_runs>
+      <hashdigest type='md5'>d4646883f828d2a00d3298f94039a1a2</hashdigest>
+      <hashdigest type='sha1'>752e0da92a9ddb4ad8818be8869efbfe9869ef4c</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>false</pronomMatch>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>$BadBlockFile</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>5</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>$AllocationFile</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>r</name_type>
+      <filesize>131072</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>6</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>DOS executable (device driver) </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='4096' img_offset='55296' len='131072'/>
+      </byte_runs>
+      <hashdigest type='md5'>7004a8faf7a3f8bf9915d49c5d49ec74</hashdigest>
+      <hashdigest type='sha1'>43abe6d8f48156715584d98e200df9914fb5a365</hashdigest>
+<!-- plugin_process -->
+      <pronomMatch>false</pronomMatch>
+      <virusFound>false</virusFound>
+    </fileobject>
+    <fileobject>
+      <filename>$StartupFile</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>7</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>$AttributesFile</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>r</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>8</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>..</filename>
+      <partition>1</partition>
+      <id>7</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <inode>0</inode>
+      <meta_type>0</meta_type>
+      <mode>0</mode>
+      <nlink>0</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A81.wav</filename>
+      <partition>1</partition>
+      <id>8</id>
+      <name_type>-</name_type>
+      <filesize>948465800</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10430</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:30Z</mtime>
+      <ctime>2007-11-26T18:42:30Z</ctime>
+      <atime>2007-11-26T23:40:24Z</atime>
+      <libmagic>RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='294912' img_offset='346112' len='948465800'/>
+      </byte_runs>
+      <hashdigest type='md5'>0f3dc34a1897bab5ceab196c05667eeb</hashdigest>
+      <hashdigest type='sha1'>fc0685ef982ff95fa33eefd987f0461d3aa7d00b</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>A82.aif</filename>
+      <partition>1</partition>
+      <id>9</id>
+      <name_type>-</name_type>
+      <filesize>683808862</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10431</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:30Z</mtime>
+      <ctime>2007-11-26T18:42:30Z</ctime>
+      <atime>2007-11-26T22:08:17Z</atime>
+      <crtime>2006-08-23T23:29:46Z</crtime>
+      <libmagic>IFF data, AIFF audio </libmagic>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='948809728' img_offset='948860928' len='124878848'/>
+      </byte_runs>
+      <hashdigest type='md5'>079922254bd3b1ab5fb12e5629f409d4</hashdigest>
+      <hashdigest type='sha1'>c62017336a2dd6008449435563cc1405e6208e2b</hashdigest>
+    </fileobject>
+    <fileobject>
+      <filename>A83.aif</filename>
+      <partition>1</partition>
+      <id>10</id>
+      <name_type>-</name_type>
+      <filesize>47628158</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10432</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:30Z</mtime>
+      <ctime>2007-11-26T18:42:30Z</ctime>
+      <atime>2007-11-26T22:08:18Z</atime>
+      <crtime>2006-08-23T23:35:53Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A84.aiff</filename>
+      <partition>1</partition>
+      <id>11</id>
+      <name_type>-</name_type>
+      <filesize>223696122</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10433</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:30Z</mtime>
+      <ctime>2007-11-26T18:42:30Z</ctime>
+      <atime>2007-11-26T22:08:18Z</atime>
+      <crtime>2006-08-23T23:48:56Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A85.aiff</filename>
+      <partition>1</partition>
+      <id>12</id>
+      <name_type>-</name_type>
+      <filesize>179707174</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10434</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:30Z</mtime>
+      <ctime>2007-11-26T18:42:30Z</ctime>
+      <atime>2007-11-26T22:08:18Z</atime>
+      <crtime>2006-08-24T00:14:38Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A86.aif</filename>
+      <partition>1</partition>
+      <id>13</id>
+      <name_type>-</name_type>
+      <filesize>704256158</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10435</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:29Z</mtime>
+      <ctime>2007-11-26T18:42:29Z</ctime>
+      <atime>2007-11-26T22:08:18Z</atime>
+      <crtime>2006-08-24T19:55:24Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A87-b.aiff</filename>
+      <partition>1</partition>
+      <id>14</id>
+      <name_type>-</name_type>
+      <filesize>335815942</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10436</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:29Z</mtime>
+      <ctime>2007-11-26T18:42:29Z</ctime>
+      <atime>2007-11-26T22:08:19Z</atime>
+      <crtime>2006-08-24T20:10:00Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A87.aif</filename>
+      <partition>1</partition>
+      <id>15</id>
+      <name_type>-</name_type>
+      <filesize>649102370</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10437</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:29Z</mtime>
+      <ctime>2007-11-26T18:42:29Z</ctime>
+      <atime>2007-11-26T23:40:19Z</atime>
+      <crtime>2006-08-24T20:44:57Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>A87.aiff</filename>
+      <partition>1</partition>
+      <id>16</id>
+      <name_type>-</name_type>
+      <filesize>485152002</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10438</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2007-11-26T18:42:29Z</mtime>
+      <ctime>2007-11-26T18:42:29Z</ctime>
+      <atime>2007-11-26T22:08:19Z</atime>
+      <crtime>2006-08-24T19:22:43Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>Desktop DB</filename>
+      <partition>1</partition>
+      <id>17</id>
+      <name_type>-</name_type>
+      <filesize>1024</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10440</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2005-10-26T19:26:01Z</mtime>
+      <ctime>2006-01-03T03:53:47Z</ctime>
+      <atime>2007-11-26T23:32:48Z</atime>
+      <crtime>2005-10-26T19:26:01Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+    <fileobject>
+      <filename>Desktop DF</filename>
+      <partition>1</partition>
+      <id>18</id>
+      <name_type>-</name_type>
+      <filesize>2</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>10441</inode>
+      <meta_type>1</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>99</uid>
+      <gid>99</gid>
+      <mtime>2005-10-26T19:26:01Z</mtime>
+      <ctime>2006-01-03T03:53:47Z</ctime>
+      <atime>2007-11-26T23:32:48Z</atime>
+      <crtime>2005-10-26T19:26:01Z</crtime>
+      <libmagic>empty </libmagic>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+<!-- clock: 39 -->
+  <runstats>
+    <user_seconds>6</user_seconds>
+    <system_seconds>4</system_seconds>
+    <maxrss>1417216</maxrss>
+    <reclaims>538</reclaims>
+    <faults>0</faults>
+    <swaps>0</swaps>
+    <inputs>15</inputs>
+    <outputs>17</outputs>
+    <stop_time>Wed Aug  1 11:04:51 2012</stop_time>
+  </runstats>
+</dfxml>
