@@ -151,7 +151,6 @@ module Dfxml
         map['filesize'] = self.filesize
         map['fragments'] = self.fragments
         map['gid'] = self.gid
-        map['id'] = self.id_
         map['inode'] = self.inode
         map['alloc'] = self.alloc
         map['libmagic'] = self.libmagic

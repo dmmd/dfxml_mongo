@@ -13,3 +13,10 @@ get '/image/:image_fn' do
   
   erb :image
 end
+
+get '/file' do
+  @image = mongo.db.find(:image_filename => params[:image]).next
+  @id = params[:file]
+  
+  erb :file
+end

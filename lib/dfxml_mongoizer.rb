@@ -4,7 +4,7 @@ module DfxmlProcessor
     
     def initialize(doc_path)
       @image_hash = Hash.new
-      @files = Array.new
+      @files = Hash.new
       @filename = doc_path
       if File.extname(doc_path) == '.xml'
         @from_image = false
@@ -24,6 +24,14 @@ module DfxmlProcessor
     def path p
        path = p.split('/')
        path[0..-2].join('/')
+    end
+    
+    def shaify(v, w)
+      sha = Digest::SHA1.new
+      sha.update v
+      sha.update '_'
+      sha.update w
+      sha.hexdigest
     end
     
     def build_hash
@@ -56,7 +64,9 @@ module DfxmlProcessor
               file[field[0]] = field[1]
             end
           end
-          files.push(file)
+          id = shaify(@file_id, file['inode'])
+          file['id'] = id
+          files[id] = file
         end
       end
     end

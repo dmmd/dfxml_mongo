@@ -31,14 +31,14 @@
 		<tbody>
 			<% @record['files'].each do |file| %>
 				<tr>
-					<% if file['alloc'] == 1.to_s %>
+					<% if file[1]['alloc'] == 1.to_s %>
 						<td><span class="ui-icon ui-icon-circle-check"></span></td>
 					<% else %>
 						<td><span class="ui-icon ui-icon-circle-close"></span></td>
 					<% end %>
-					<td><%= file['filename'] %></td>
-					<td><%= file['pronom_format'] %></td>
-					<td><%= file['filesize'] %></td>
+					<td><a href='http://localhost:4567/file?image=<%= @record['image_filename'] %>&file=<%= file[0]%>'><%= file[1]['filename'] %></a></td>
+					<td><%= file[1]['pronom_format'] %></td>
+					<td><%= file[1]['filesize'] %></td>
 				</tr>
 			<% end %>
 		</tbody>
