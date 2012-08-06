@@ -2,7 +2,7 @@ require 'sinatra'
 require './lib/mongo'
 require './lib/dfxml'
 require './lib/dfxml/parser'
-require './lib/file_manager'
+require './lib/dfxml_mongoizer'
 
 mongo = MongoDFXML::DfxmlDB.new
 

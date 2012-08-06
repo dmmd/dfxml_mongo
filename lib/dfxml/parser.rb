@@ -137,6 +137,44 @@ module Dfxml
         Dfxml::CharacterFileTypes[@name_type] ||= Dfxml::NumericFileTypes[@meta_type.to_i]
       end
       
+      def get_coll
+        map = Hash.new
+        map['alloc'] = self.alloc
+        map['atime'] = self.atime
+        map['compressed'] = self.compressed
+        map['bkup_time'] = self.bkup_time
+        map['crtime'] = self.crtime
+        map['ctime'] = self.ctime
+        map['dtime'] = self.dtime
+        map['encrypted'] = self.encrypted
+        map['filename'] = self.filename
+        map['filesize'] = self.filesize
+        map['fragments'] = self.fragments
+        map['gid'] = self.gid
+        map['id'] = self.id_
+        map['inode'] = self.inode
+        map['alloc'] = self.alloc
+        map['libmagic'] = self.libmagic
+        map['link_target'] = self.link_target
+        map['meta_type'] = self.meta_type
+        map['mode'] = self.mode
+        map['name_type'] = self.name_type
+        map['orphan'] = self.orphan
+        map['partition'] = self.partition
+        map['seq'] = self.seq
+        map['uid'] = self.uid
+        map['unalloc'] = self.unalloc
+        map['unused'] = self.unused
+        map['used'] = self.used
+        map['md5'] = self.md5
+        map['sha1'] = self.sha1
+        map['sha256'] = self.sha256
+        map['pronom_puid'] = self.pronom_puid
+        map['pronom_format'] = self.pronom_format
+        map['pronom_identification_method'] = self.pronom_identification_method
+        return map
+      end
+      
     end
 
     class Volume

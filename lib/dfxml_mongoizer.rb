@@ -49,21 +49,14 @@ module DfxmlProcessor
           @blk_size = volume.block_size
           @blk_count = volume.block_count
         elsif reader.node_type == Nokogiri::XML::Reader::TYPE_ELEMENT and reader.name == 'fileobject'
-          fileobject = Dfxml::Parser::FileObject.parse(reader.outer_xml)
-          doc = {
-            :filename => fileobject.filename,
-            :filesize => fileobject.filesize,
-            :path => '/' + path(fileobject.filename),
-            :alloc => fileobject.alloc
-          }
-          
-          if fileobject.pronom_format != nil
-            doc[:pronom_format] = fileobject.pronom_format
-            doc[:pronom_puid] = fileobject.pronom_puid
-            doc[:pronom_identification_method] = fileobject.pronom_identification_method
+          fileobject = Dfxml::Parser::FileObject.parse(reader.outer_xml).get_coll
+          file = Hash.new
+          fileobject.each do |field|
+            if field[1] != nil
+              file[field[0]] = field[1]
+            end
           end
-          
-          files.push(doc)
+          files.push(file)
         end
       end
     end
