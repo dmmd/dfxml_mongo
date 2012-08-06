@@ -7,7 +7,25 @@
 </head>
 <body>
 	<div class="container">
-		<%= @image['image_filename'] %>
-		<%= @image['files'][@id] %>
+		<h2>
+			<a href='http://localhost:4567/image/<%= @image['image_filename'] %>'>
+				<%= @image['image_filename'] %>
+			</a> 
+			: <%= @image['files'][@id]['filename'] %>
+		</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>field</th><th>value</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @image['files'][@id].each do |field| %>
+					<tr>
+						<td><%= field[0] %></td>
+						<td><%= field[1] %></td>
+					</tr>
+				<% end %>
+			</tbody>
 	</div>
 </body>
