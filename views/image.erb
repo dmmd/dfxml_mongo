@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 	<h2><%= @record['image_filename'] %></h2>
-	<h3>volume data</h3>
+	<h3>Volume</h3>
 	<table>
 		<thead/>
 		<tbody>
@@ -22,10 +22,10 @@
 	<table>
 		<thead>
 			<tr>
-				<td>allocated</td>
-				<td>filename</td>
-				<td>format (Pronom)</td>
-				<td>size (Bytes)</td>
+				<th>allocated</th>
+				<th>filename</th>
+				<th>format (Pronom)</th>
+				<th>size (Bytes)</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -36,7 +36,7 @@
 					<% else %>
 						<td><span class="ui-icon ui-icon-circle-close"></span></td>
 					<% end %>
-					<td><a href='http://localhost:4567/file?image=<%= @record['image_filename'] %>&file=<%= file[0]%>'><%= file[1]['filename'] %></a></td>
+					<td><a href='http://23.21.138.252:4567/file?image=<%= @record['image_filename'] %>&file=<%= file[0]%>'><%= file[1]['filename'] %></a></td>
 					<td><%= file[1]['pronom_format'] %></td>
 					<td><%= file[1]['filesize'] %></td>
 				</tr>
