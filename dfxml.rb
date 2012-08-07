@@ -20,3 +20,9 @@ get '/file' do
   
   erb :file
 end
+
+get '/images' do
+  @imagenames = mongo.db.find(:fields => ['image_filename'])
+  
+  erb :images
+end
