@@ -5,7 +5,8 @@ require './lib/dfxml_mongoizer'
 
 namespace :gumshoejr do
   namespace :db do
-    mongo = MongoDFXML::DfxmlDB.new
+    image = MongoDFXML::DfxmlDB.new
+    coll = MongoDFXML::CollDB.new
     
     task :test do
       puts ENV['FILE']
@@ -17,7 +18,7 @@ namespace :gumshoejr do
     
     task :add do
       dfxml = DfxmlProcessor::DfxmlFile.new(ENV['FILE'])            
-      mongo.db.save(dfxml.image_hash)
+      image.db.save(dfxml.image_hash)
     end 
     
     task :add_dir do
@@ -33,12 +34,17 @@ namespace :gumshoejr do
           if File.extname(file) == ".xml"
             puts File.basename(file)
             dfxml = DfxmlProcessor::DfxmlFile.new(File.absolute_path(file))
-            mongo.db.save(dfxml.image_hash)
+            image.db.save(dfxml.image_hash)
           end  
         end
       else
         printf(ENV['DIR'] + 'is not a valid directory')
       end
     end
+  
+    task :add_coll do
+      coll.db.save("cid" => ENV['ID'], "title" => ENV['TITLE'])
+    end
+  
   end
 end 

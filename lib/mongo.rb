@@ -7,11 +7,17 @@ module MongoDFXML
     def initialize
       @connection = Mongo::Connection.new
       @collection = @connection[COL_NAME]
-      @db = @collection[DB_NAME]
+      @db = @collection[IMAGE_DB]
     end
+  end
+  
+  class CollDB
+    attr :connection, :collection, :db
     
-    def save(image)
-      @db.save(image)
-    end  
+    def initialize
+      @connection = Mongo::Connection.new
+      @collection = @connection[COL_NAME]
+      @db = @collection[COLL_DB]
+    end
   end
 end

@@ -7,7 +7,14 @@
 </head>
 <body>
 	<div class="container">
-		HI
-		<%= @imagenames.next %>
+		<h2>Forensic Images</h2>
+		<% @cols.each do |col| %>
+			<%= col[0] %> <%= col[1][:title]%>
+			<ul>
+			<% col[1][:files].each do |image| %>
+				<li><a href="http://localhost:4567/image/<%= image %>"><%= image %></a></li>
+			<% end %>
+			</ul>
+		<% end %>
 	</div>
 </body>

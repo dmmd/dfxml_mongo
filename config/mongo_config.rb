@@ -1,2 +1,3 @@
 COL_NAME = "dfxml"
-DB_NAME = "images"
+IMAGE_DB = "images"
+COLL_DB = "cols"
