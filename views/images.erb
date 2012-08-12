@@ -12,7 +12,7 @@
 			<%= col[0] %> <%= col[1][:title]%>
 			<ul>
 			<% col[1][:files].each do |image| %>
-				<li><a href="http://localhost:4567/image/<%= image %>"><%= image %></a></li>
+				<li><a href="/image/<%= image %>"><%= image %></a></li>
 			<% end %>
 			</ul>
 		<% end %>
