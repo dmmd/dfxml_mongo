@@ -10,6 +10,10 @@ def getTitle(cid, coll)
   return coll.db.find({"cid" => cid}, {:fields => ['title']}).next['title']
 end
 
+def getStats(cid, coll)
+  return coll.db.find({"cid" => cid}, {:fields => ['title']}).next['title']
+end
+
 get '/image/:image_fn' do
   images = MongoDFXML::DfxmlDB.new
   coll = MongoDFXML::CollDB.new
