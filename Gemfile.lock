@@ -9,7 +9,7 @@ GEM
     mongo (1.6.4)
       bson (~> 1.6.4)
     nokogiri (1.5.5)
-    rack (1.4.1)
+    rack (1.6.12)
     rack-protection (1.2.0)
       rack
     sax-machine (0.1.0)
