@@ -6,9 +6,13 @@ GEM
       bson (~> 1.6.4)
     daemons (1.1.8)
     eventmachine (0.12.10)
+    mini_portile2 (2.5.1)
     mongo (1.6.4)
       bson (~> 1.6.4)
-    nokogiri (1.5.5)
+    nokogiri (1.11.4)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    racc (1.5.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -30,7 +34,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   mongo
-  nokogiri (~> 1.5.0)
+  nokogiri (~> 1.11.4)
   sax-machine
   sinatra
   thin
